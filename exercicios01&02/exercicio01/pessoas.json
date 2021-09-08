@@ -1,0 +1,74 @@
+[
+        {
+            "nome": "Isabela",
+            "idade": 19,
+            "peso": 60,
+            "altura": 1.70,
+            "nº de id": 1
+        },
+        {
+            "nome": "Livia",
+            "idade": 20,
+            "peso": 56,
+            "altura": 1.58,
+            "nº de id": 2
+        },
+        {
+            "nome": "Matheus",
+            "idade": 38,
+            "peso": 80,
+            "altura": 1.67,
+            "nº de id": 3
+         },
+        {
+            "nome": "Flavio",
+            "idade": 52,
+            "peso": 93,
+            "altura": 1.80,
+            "nº de id": 4
+        },
+        {
+            "nome": "Ana",
+            "idade": 45,
+            "peso": 78,
+            "altura": 1.88,
+            "nº de id": 5
+        },
+        {
+            "nome": "Fernanda",
+            "idade": 29,
+            "peso": 60,
+            "altura": 1.70,
+            "nº de id": 6
+        },
+        {
+            "nome": "Manoel",
+            "idade": 32,
+            "peso": 76,
+            "altura": 1.58,
+            "nº de id": 7
+        },
+        {
+            "nome": "Carlos",
+            "idade": 40,
+            "peso": 95,
+            "altura": 1.67,
+            "nº de id": 8
+        },
+        {
+            "nome": "Carolina",
+            "idade": 48,
+            "peso": 98,
+            "altura": 1.66,
+            "nº de id": 9
+        },
+        {
+            "nome": "Kate",
+            "idade": 69,
+            "peso": 105,
+            "altura": 1.68,
+            "nº de id": 10
+        }
+    ]
+    
+
