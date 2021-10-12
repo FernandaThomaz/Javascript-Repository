@@ -1,0 +1,92 @@
+[
+    {
+        "codigo": "1",
+        "nome": "Shampoo",
+        "marca": "Seda",
+        "precoCusto": 4.85,
+        "precoVenda": 5.50,
+        "qtdEstoque": 6,
+        "categoria": "Hidratação"
+    },
+    {
+        "codigo": "2",
+        "nome": "Condicionador",
+        "marca": "Seda",
+        "precoCusto": 5.7,
+        "precoVenda": 5.60,
+        "qtdEstoque": 7,
+        "categoria": "Hidratação"
+    },
+    {
+        "codigo": "3",
+        "nome": "Lasanha",
+        "marca": "Pif Paf",
+        "precoCusto": 10.00,
+        "precoVenda": 12.00,
+        "qtdEstoque": 9,
+        "categoria": "Congelados"
+    },
+    {
+        "codigo": "4",
+        "nome": "Papel Higienico",
+        "marca": "Neve",
+        "precoCusto": 3.14,
+        "precoVenda": 8.49,
+        "qtdEstoque": 90,
+        "categoria": "Higiene"
+    },
+    {
+        "codigo": "5",
+        "nome": "Guaraná Refri 2L",
+        "marca": "Bebidas",
+        "precoCusto": 3.5,
+        "precoVenda": 4.55,
+        "qtdEstoque": 4,
+        "categoria": "Bebidas"
+		},
+    {
+        "codigo": "6",
+        "nome": "Perfume",
+        "marca": "Capricho",
+        "precoCusto": 30.00,
+        "precoVenda": 30.50,
+        "qtdEstoque": 323,
+        "categoria": "Boticário"
+    },
+    {
+        "codigo": "7",
+        "nome": "Carne Moida 250g",
+        "marca": "Carne",
+        "precoCusto": 38.99,
+        "precoVenda": 40.00,
+        "qtdEstoque": 400,
+        "categoria": "Congelados"
+    },
+    {
+        "codigo": "8",
+        "nome": "Calçados",
+        "marca": "Adidas",
+        "precoCusto": 80.00,
+        "precoVenda": 120.00,
+        "qtdEstoque": 20,
+        "categoria": "Vestuários"
+    },
+    {
+        "codigo": "9",
+        "nome": "Vestidos",
+        "marca": "Gucci",
+        "precoCusto": 5.75,
+        "precoVenda": 12.5,
+        "qtdEstoque": 225,
+        "categoria": "Vestuários"
+    },
+    {
+        "codigo": "10",
+        "nome": "Pasta de Dente",
+        "marca": "Colgate",
+        "precoCusto": 5.00,
+        "precoVenda": 5.50,
+        "qtdEstoque": 15,
+        "categoria": "Higiene"
+    }
+]

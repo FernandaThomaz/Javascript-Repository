@@ -1,14 +1,14 @@
-const Produtos = require('./produtos.json');
+const produtos = require('./produtos.json');
 
-let departamentos = Produtos.map((produto) => {
+let Departamento = produtos.map((produto) => {
     return produto.Departamento;
 });
 
-let lista_departamentos = Array.from(new Set(departamentos));
+let list_departamento = Array.from(new Set(Departamento));
 
-lista_departamentos.forEach(i => {
-    let produto = Produtos.filter((produto) => {
+list_departamento.forEach(i => {
+    let produto = produtos.filter((produto) => {
         return produto.Departamento == i
     });
-        console.log(`Esses são as quantidades de produtos estocados por departamento que existem: ${produto.length}`);
+        console.log(`Esses são as quantidades de produtos estocados por departamento ${list_departamento.length} que existem: ${produto.length}`);
 })
