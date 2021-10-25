@@ -1,0 +1,57 @@
+[
+    {
+            "nome": "Isabela Maria",
+            "idade": 20,
+            "cpf": "87985401903",
+            "telefone": [
+       {
+            "tipo": "Residencial",
+            "número":"(82) 2789-4330"
+       }
+    ]
+  },
+     {
+            "nome": "Cristiane Lopes",
+            "idade": 22,
+            "cpf": "77210472851",
+            "telefone": [
+       {
+            "tipo": "Residencial",
+            "número":"(31) 2554-7487"
+      }
+    ]
+    },
+        {
+            "nome": "Vitoria Lima",
+            "idade": 24,
+            "cpf": "13598908237",
+            "telefone": [
+         {
+            "tipo": "Celular",
+            "número":"(83) 98517-8732"
+        }
+    ]
+    },
+        {
+            "nome": "Anna Beatriz Oliveira",
+            "idade": 26,
+            "cpf": "58466977473",
+            "telefone": [
+         {
+             "tipo": "Celular",
+             "número":"(21) 98737-7006"
+        }
+    ]
+    },
+        {
+            "nome": "Felipe Carvalho",
+            "idade": 28,
+            "cpf": "47669491370",
+            "telefone": [
+        {
+            "tipo": "Comercial",
+            "número":"(11) 3683-4697"
+        }
+    ]
+    }
+]

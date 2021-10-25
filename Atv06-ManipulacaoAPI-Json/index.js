@@ -22,10 +22,13 @@ function getProdutoMarca(marca){
 }
 
 // Filtrar produto por código
-function getProdutoCodigo(codigo){
-  let dados_json = produtos.find(produto =>{
+  function getProdutoCodigo(codigo){
+  const produtos = require('./produtos.json');
+
+  let dados_json = produtos.filter(produto =>{
       return produto.codigo === codigo;
   });
+
   return dados_json;
 }
 
@@ -56,11 +59,24 @@ let editProduto = {
     qtdEstoque: 6,
     categoria: "Hidratação"
 }
-
+// Rota de filtragem dos produtos
+app.get('/produtos/', (req, res) => {
+    console.log(req.query);
+    res.send(getProdutos());
+});
 // Rota para listar produtos
 app.get('/listarProdutos', (req, res) => {
     console.log(req.query);
     res.send(produtos);
+});
+// Rota para cadastrar produtos
+app.get('/registrarProduto/', (req, res) => {
+  res.send(produtos.setProdutos(newProduto));
+});
+
+// Rota para editar produtos
+app.get('/editarProduto/', (req, res) => {
+  res.send(produtos.putProduto(editProduto));
 });
 
 // Rota para filtrar produtos por marca
@@ -76,7 +92,7 @@ app.get('/listarProdutos/:codigo', (req, res) => {
 });
 // Roda para filtrar produtos por nome
 app.get('/listarProdutos/nome/:nome', (req, res) => {
-  res.send(filtrar(req.params.nome));
+  res.send(getProdutoNome(req.params.nome));
 });
 
 app.listen(port, () => {
@@ -84,14 +100,14 @@ app.listen(port, () => {
 });
 
 // Função filtrar todos produtos 
-function filtrar(busca) {
+function getProdutoCodigo(busca) {
   const produtos = produtos.filter(p => {
       return p.nome == busca;
   });
   return produtos;
 } 
 // Filtrar produto por código
-function filtrar(codigo){
+function getProdutoCodigo(codigo){
   const produtos = require('./produtos.json');
 
   let dados_json = produtos.filter(produto =>{
@@ -102,11 +118,13 @@ function filtrar(codigo){
 }
 
 // Função para filtrar por marca 
-function filtrarMarca(marca){
+function getProdutoMarca(marca){
   const produtos = require('./produtos.json');
+
   let dados_json = produtos.filter(produto =>{
     return produto.marca === marca;
 });
+
 return dados_json;
 }
 
@@ -120,7 +138,7 @@ function CriarArquivo(){
     // Arquivo de produto criado que existe 
     if(exists){
 
-      fs.writeFile('produtos.json', '[]', 'utf8', function readFileCallback(error, data){
+      fs.readFile('produtos.json', '[]', 'utf8', function readFileCallback(error, data){
             if (error){
                 console.log(error);
             } else {
@@ -178,8 +196,7 @@ function CriarArquivo(){
     });
 
      // Editar os produtos criados
-    const produtos = require('./produtos.json');
-    function putProduto(produto){
+      function putProduto(produto){
       let idVerificacao = 1;
       let listProdutos = [];
      
